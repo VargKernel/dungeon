@@ -147,7 +147,7 @@ Each application mode (`GameMode`, `EditorMode`, `SettingsMode`) implements the 
 
 ## Assets
 
-Information about third-party assets and their licenses can be found in [CREDITS.MD](CREDITS.MD).
+Information about third-party assets and their licenses can be found in [CREDITS.md](CREDITS.md).
 
 ## License
 
