@@ -1,0 +1,64 @@
+name: Debian 13 (Trixie)
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  build:
+    name: Debian 13 (Trixie)
+    runs-on: ubuntu-latest
+
+    container:
+      image: debian:13
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    - name: Install dependencies
+      run: |
+        set -euxo pipefail
+
+        apt-get update
+        apt-get install -y --no-install-recommends \
+          ca-certificates \
+          git \
+          build-essential \
+          cmake \
+          pkg-config \
+          file \
+          libsdl2-dev \
+          libsdl2-image-dev \
+          libsdl2-ttf-dev
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Configure dungeon
+      run: |
+        set -euxo pipefail
+        cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+
+    - name: Build dungeon
+      run: |
+        set -euxo pipefail
+        cmake --build build --parallel $(nproc) -- VERBOSE=1 | tee build/build.log
+
+    - name: Verify binary
+      run: |
+        set -euxo pipefail
+
+        if [ ! -f build/dungeon ]; then
+          echo "::error::build/dungeon not found"
+          grep -E "error:|undefined reference|ld returned" -rn build || true
+          exit 1
+        fi
+
+        echo "Binary info:"
+        ldd build/dungeon || true
+        file build/dungeon
