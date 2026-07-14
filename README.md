@@ -4,11 +4,17 @@
 
 **A tile-based dungeon crawler with a built-in level editor**
 
-[![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?style=flat-square&logo=cplusplus)](https://en.cppreference.com/w/cpp/17)
-[![SDL2](https://img.shields.io/badge/SDL2-2.x-1A1A2E?style=flat-square&logo=sdl)](https://www.libsdl.org/)
-[![CMake](https://img.shields.io/badge/CMake-build-064F8C?style=flat-square&logo=cmake)](https://cmake.org/)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-lightgrey?style=flat-square)](#building)
+[![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus)](https://en.cppreference.com/w/cpp/17)
+[![SDL2](https://img.shields.io/badge/SDL2-2.x-1A1A2E?logo=sdl)](https://www.libsdl.org/)
+[![CMake](https://img.shields.io/badge/CMake-build-064F8C?logo=cmake)](https://cmake.org/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-lightgrey)](#building)
+
+[![Debian 12 (Bookworm)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-12.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-12.yml)
+[![Debian 13 (Trixie)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-13.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-13.yml)
+[![Ubuntu 22.04 (Jammy)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-22.04.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-22.04.yml)
+[![Ubuntu 24.04 (Noble)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-24.04.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-24.04.yml)
+[![Windows (MinGW)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml)
 
 </div>
 
