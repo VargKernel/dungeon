@@ -14,7 +14,7 @@
 [![Debian 13 (Trixie)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-13.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-13.yml)
 [![Ubuntu 22.04 (Jammy)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-22.04.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-22.04.yml)
 [![Ubuntu 24.04 (Noble)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-24.04.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-24.04.yml)
-[![Windows (MinGW)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml)
+[![Windows (MinGW cross-compile)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml)
 
 </div>
 
