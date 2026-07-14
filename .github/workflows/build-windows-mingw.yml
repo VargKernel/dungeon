@@ -1,0 +1,83 @@
+name: Windows (MinGW cross-compile)
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  build:
+    name: Windows (MinGW cross-compile)
+    runs-on: ubuntu-latest
+
+    container:
+      image: ubuntu:24.04
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    - name: Install dependencies
+      run: |
+        set -euxo pipefail
+
+        apt-get update
+        apt-get install -y --no-install-recommends \
+          ca-certificates \
+          git \
+          build-essential \
+          cmake \
+          pkg-config \
+          wget \
+          tar \
+          file \
+          mingw-w64
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Download MinGW SDL2 libraries
+      run: |
+        set -euxo pipefail
+
+        mkdir -p win_libs
+        cd win_libs
+
+        wget -nc https://github.com/libsdl-org/SDL/releases/download/release-2.30.1/SDL2-devel-2.30.1-mingw.tar.gz
+        tar -xf SDL2-devel-2.30.1-mingw.tar.gz
+
+        wget -nc https://github.com/libsdl-org/SDL_image/releases/download/release-2.8.2/SDL2_image-devel-2.8.2-mingw.tar.gz
+        tar -xf SDL2_image-devel-2.8.2-mingw.tar.gz
+
+        wget -nc https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.22.0/SDL2_ttf-devel-2.22.0-mingw.tar.gz
+        tar -xf SDL2_ttf-devel-2.22.0-mingw.tar.gz
+
+        mkdir -p x86_64
+
+        cp -r SDL2-*/x86_64-w64-mingw32/* x86_64/
+        cp -r SDL2_image-*/x86_64-w64-mingw32/* x86_64/
+        cp -r SDL2_ttf-*/x86_64-w64-mingw32/* x86_64/
+
+    - name: Build dungeon.exe
+      run: |
+        set -euxo pipefail
+        chmod +x build_win.sh
+        ./build_win.sh
+
+    - name: Verify binary
+      run: |
+        set -euxo pipefail
+
+        if [ ! -f build_win/dungeon.exe ]; then
+          echo "::error::build_win/dungeon.exe not found"
+          exit 1
+        fi
+
+        echo "Binary info:"
+        file build_win/dungeon.exe
+
+        echo "Bundled DLLs:"
+        ls -la build_win/*.dll
