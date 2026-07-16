@@ -9,11 +9,11 @@
 [![CMake](https://img.shields.io/badge/CMake-build-064F8C?logo=cmake)](https://cmake.org/)
 [![SDL 2](https://img.shields.io/badge/SDL-2-1A1A2E?logo=sdl)](https://www.libsdl.org/)
 
-[![Debian 12 (Bookworm)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-12.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-12.yml)
-[![Debian 13 (Trixie)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-13.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-debian-13.yml)
-[![Ubuntu 22.04 (Jammy)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-22.04.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-22.04.yml)
-[![Ubuntu 24.04 (Noble)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-24.04.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-ubuntu-24.04.yml)
-[![Windows (MinGW cross-compile)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/VargKernel/dungeon/actions/workflows/build-windows-mingw.yml)
+[![Debian 12 (Bookworm)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-12.yml/badge.svg)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-12.yml)
+[![Debian 13 (Trixie)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-13.yml/badge.svg)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-13.yml)
+[![Ubuntu 22.04 (Jammy)](https://github.com/rebootless/dungeon/actions/workflows/build-ubuntu-22.04.yml/badge.svg)](https://github.com/rebootless/dungeon/actions/workflows/build-ubuntu-22.04.yml)
+[![Ubuntu 24.04 (Noble)](https://github.com/rebootless/dungeon/actions/workflows/build-ubuntu-24.04.yml/badge.svg)](https://github.com/rebootless/dungeon/actions/workflows/build-ubuntu-24.04.yml)
+[![Windows (MinGW cross-compile)](https://github.com/rebootless/dungeon/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/rebootless/dungeon/actions/workflows/build-windows-mingw.yml)
 
 **A tile-based dungeon crawler with a built-in level editor**
 
