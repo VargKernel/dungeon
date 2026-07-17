@@ -5,9 +5,9 @@
 [![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus)](https://en.cppreference.com/w/cpp/17)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Platform: Linux](https://img.shields.io/badge/platform-Linux-lightgrey?logo=linux&logoColor=white)](#building)
-[![Windows (MinGW)](https://img.shields.io/badge/platform-Windows-1A1A2E?logo=mingww64&logoColor=white)](#building)
+[![Windows (MinGW)](https://img.shields.io/badge/platform-Windows-lightgrey?logo=mingww64&logoColor=white)](#building)
 [![CMake](https://img.shields.io/badge/CMake-build-064F8C?logo=cmake)](https://cmake.org/)
-[![SDL 2](https://img.shields.io/badge/SDL-2-1A1A2E?logo=sdl)](https://www.libsdl.org/)
+[![SDL2](https://img.shields.io/badge/SDL2-1A1A2E?logo=sdl&logoColor=white)](https://www.libsdl.org/)
 
 [![Debian 12 (Bookworm)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-12.yml/badge.svg)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-12.yml)
 [![Debian 13 (Trixie)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-13.yml/badge.svg)](https://github.com/rebootless/dungeon/actions/workflows/build-debian-13.yml)
