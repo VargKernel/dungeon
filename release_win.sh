@@ -32,13 +32,11 @@ for dll in libgcc_s_seh-1.dll libstdc++-6.dll libwinpthread-1.dll; do
     fi
 done
 
-# CMake POST_BUILD оставил assets/world как симлинки — заменяем их реальными копиями
 rm -f assets world
 
 cp -r ../assets .
 cp -r ../world .
 
-# Убираем мусор cmake, оставляя только релизные файлы
 rm -rf CMakeFiles CMakeCache.txt cmake_install.cmake Makefile
 
 echo "SUCCESS"
